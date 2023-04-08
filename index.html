@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title >Admission Form</title>
+  <style>
+    body {
+     
+        background: linear-gradient(to bottom, #a39f99, #b08f92);
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #0c0a0a;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      width: 50%;
+      height: 70%;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admission Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email">
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="program">Program:</label>
+    <select id="program" name="program">
+      <option value="bsc">BSc</option>
+      <option value="msc">MSc</option>
+      <option value="phd">PhD</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
